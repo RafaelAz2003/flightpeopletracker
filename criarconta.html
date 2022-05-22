@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Flight People Tracker</title>
+        <link href="aviacao_image.jpg" rel="icon">
+		<style>
+			*{margin:0px;}
+			body{background:url(aviao_background.jpg) no-repeat #F3F2E9;}
+			header{width:350px; margin:140px auto 0px auto; text-align:center;}
+			header h1{padding:30px 0px 30px 0px; color:#F0F8FF;font-size:47px;}
+			section{width:900px; margin:-12px auto; background-color: #FFFFFF;}
+			nav{padding:10px; background-color:grey; text-align:center; font-weight:bold;}
+			nav p{color:gold;}
+			nav a{color:#FFFFFF;}
+			article{padding:15px;}
+            article p{font-size:16px; font-weight:bold; text-align:center;}
+            article img{width:870px; height:600px;}
+            fieldset{width: 100px; border: 2px solid grey; border-radius: 20px; margin-bottom: 15px;}
+            label{display: inline-block;}
+            input[type="text"]{height:20px; width: 400px;}
+            input[type="email"]{height:20px; width: 400px;}
+            input[type="password"]{height:20px; width: 400px;}
+            legend{font-size:22px; font-weight:bold;}
+			footer{color:#999999; text-align:center;}
+            div input{width:100px;}
+		</style>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	</head>
+    <body>
+		<div class="page-principal">
+			<header>
+				<h1>FLIGHT<br />PEOPLE<br />TRACKER</h1>
+			</header>
+			<section>
+				<nav>
+					<p>
+						<a href="empresa.html">NOSSA EMPRESA</a> | <a href="quemsomos.html">QUEM SOMOS</a> | <a href="login.html">LOGIN</a> | CRIAR CONTA
+					</p>
+				</nav>
+				<article>
+					<img src="flight_logo.jpg" alt="Imagem para usuários" />
+					<br />
+						<form method="post" action="criarconta.php">
+							<fieldset>
+								<legend>Criar conta</legend>
+								<label for="nome">Nome:</label><br />
+								<input type="text" id="nome" name="nome" required><br />
+								<label for="numero">Número:</label><br />
+								<input type="text" id="numero" name="numero" required><br />
+								<label for="email1">Email:</label><br />
+								<input type="email" id="email1" name="email1" required><br />
+								<label for="email2">Confirmar Email:</label><br />
+								<input type="email" id="email2" name="email2" required><br />
+								<label for="pwd1">Senha:</label><br />
+								<input type="password" id="pwd1" name="pwd1" required><br />
+								<label for="pwd2">Confirmar Senha:</label><br />
+								<input type="password" id="pwd2" name="pwd2" required><br />
+								<input type="checkbox" id="ckbAceitar" checked/>Aceito todos os termos e condições <br />
+							</fieldset>
+							<div>
+								<input type="submit" id="button" value="Enviar">
+								<input type="reset" id="button" value="Reiniciar"><br />
+							</div>
+						</form>
+				</article>
+				<footer>
+					<p>
+						Flight People Tracker
+					</p>
+				</footer>
+			</section>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+			<script type="text/javascript" src="main.js"></script>
+		</div>
+	</body>
+</html>
